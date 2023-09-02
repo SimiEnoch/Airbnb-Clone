@@ -1,38 +1,184 @@
-.App {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media screen and (min-width: 700px) {
+  .btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .filter-btn {
+    padding: 10px;
+    cursor: pointer;
+  }
+  .button-container {
+    text-align: center;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+  }
+  .prev-btn {
+    font-size: 16px;
+    border-radius: 50%;
+    border: none;
+    padding: 5px;
+    margin: 2px;
+    cursor: pointer;
+    color: white;
+    position: absolute;
+    left: 20px;
+  }
+  .next-btn {
+    font-size: 16px;
+    cursor: pointer;
+    position: absolute;
+    border: none;
+    padding: 5px;
+    margin: 2px;
+    right: 20px;
+    border-radius: 50%;
+    color: white;
+  }
+}
+@media screen and (max-width: 900px) {
+  .menu-items {
+    border: none;
+  }
+  .section-center {
+    display: grid;
+    width: auto;
+    grid-gap: 15px;
+  }
+  .btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .filter-btn {
+    padding: 10px;
+    border-spacing: 10px;
+    cursor: pointer;
+  }
+  .button-container {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .prev-btn {
+    font-size: 16px;
+    border: none;
+    padding: 5px;
+    margin: 2px;
+    cursor: pointer;
+    color: white;
+    position: absolute;
+    left: 10px;
+  }
+  .next-btn {
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    padding: 5px;
+    margin: 2px;
+    color: white;
+    position: absolute;
+    right: 10px;
+    border-radius: 50%;
+  }
+}
+
+body {
+  padding-top: 3.5rem;
+}
+.menu-section {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.title {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#hr {
+  width: 100px;
+  position: absolute;
+  height: 200px;
+  left: 10px;
+  border: 2px;
+  color: black;
+  transform: rotate(-90deg);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.hsss {
+  border-left-width: 1px;
+  color: black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.hsp {
+  border-right-width: 1px;
+  color: black;
+}
+
+.leaflet-container {
+  height: 100vh;
+}
+
+/* login style */
+
+.main {
+  border: 1px solid black;
+  width: 480px;
+  height: 550px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+#chk {
+  display: none;
+}
+
+.signup {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+label {
+  color: #fff;
+  font-size: 2.3em;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  display: flex;
+  margin: 60px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
 }
 
-.App-link {
-  color: #61dafb;
+input {
+  background: white;
+  justify-content: center;
+  display: flex;
+  outline: none;
+  border-radius: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.login {
+  height: 460px;
+  background: #eee;
+  border-radius: 60% /10%;
+  transform: translateY(-180px);
+  transition: 0.8s ease-in-out;
+}
+.login label {
+  color: #573b8a;
+  transform: scale(0.6);
+}
+
+#chk:checked ~ .login {
+  transform: translateY(-500px);
+}
+#chk:checked ~ .login label {
+  transform: scale(1);
+}
+#chk:checked ~ .signup label {
+  transform: scale(0.6);
 }
