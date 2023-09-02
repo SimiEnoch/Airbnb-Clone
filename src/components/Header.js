@@ -129,7 +129,7 @@ function Header() {
           </div>
         </div>
       </nav>
-      tg
+
       {showModal && <LogIn isOpen={showModal} onClose={closeModal} />}
     </header>
   );
