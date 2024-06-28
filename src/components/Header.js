@@ -21,22 +21,24 @@ function Header() {
   };
 
   return (
-    <header className=" fixed flex z-10 top-0 w-full shadow items-center justify-between bg-white h-[65px] md:px-16 px-8 text-black mb-0 pb-0 ">
-      <a href="#" class="flex px-1 sm:px-0">
-        <img
-          src={icon}
-          class="h-5 w-full sm:h-7 sm:block hidden"
-          alt="Airbnb Logo"
-        />
+    <header className=" fixed flex  top-0 w-full shadow items-center sm:justify-between md:justify-center lg:justify-between xl:justify-between bg-white h-[65px] md:px-16 px-4 text-black mb-0 pb-0 ">
+      <div className="space-x-3">
+        <a href="#" class="flex md:px-1 sm:px-0 ">
+          <img
+            src={icon}
+            class="h-5 w-full sm:h-7 sm:block hidden"
+            alt="Airbnb Logo"
+          />
 
-        <h1 className="sm:block hidden text-xl tracking-tighter font-bold px-1 text-red-500">
-          airbnb
-        </h1>
-      </a>
+          <h1 className="block text-xl tracking-tighter font-bold text-red-500">
+            airbnb
+          </h1>
+        </a>
+      </div>
       <div className="">
         <div className="max-w-md ">
           <a href="#">
-            <button className="  w-full flex gap-2 border-[1] shadow rounded-full px-10 py-2  text-[12px] font-medium cursor-pointer">
+            <button className="  w-full  flex gap-2 border-[1] shadow rounded-full px-10 py-2  text-[12px] font-medium cursor-pointer">
               <button className=""> Anywhere </button>
               <button className=" px-2 hsss hsp block">
                 Any week{' '}
@@ -45,9 +47,9 @@ function Header() {
                 Add guests
               </button>
 
-              <span className="p-1.5 rounded-full text-white bg-red-500">
+              {/* <span className="p-1.5 rounded-full text-white bg-red-500">
                 <AiOutlineSearch />
-              </span>
+              </span> */}
             </button>
           </a>
         </div>
@@ -55,7 +57,7 @@ function Header() {
       <nav
         className={`absolute bg-white text-black ${
           hamburger ? 'top-[-1000%]' : 'top-[0px]'
-        } w-full left-0 z-[-1] p-8  md:left-auto md:w-auto shadow md:shadow-none md:top-0 md:relative md:bg-transparent md:p-0 md:z-[0]  block`}
+        } w- left-0 z-[-1] p-8  md:left-auto md:w-auto shadow md:shadow-none md:top-0 md:relative md:bg-transparent md:p-0 md:z-[0] sm:hidden md:block`}
       >
         <div className="flex tracking-tighter gap-2 text-xl md:text-sm flex-col md:flex-row font-semibold md:order-2 sm:hidden md:flex">
           <div className="hidden md:block p-2 hover:text-slate-800  duration-500 text-[13px]">

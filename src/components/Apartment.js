@@ -31,6 +31,7 @@ function Apartment({ Data, tax }) {
           </div>
         </button>
       </div>
+
       <div className="section-center grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-4">
         {Data &&
           Data.map((dataItem) => {
@@ -44,7 +45,7 @@ function Apartment({ Data, tax }) {
                       className=" sm:h-64 rounded-lg md:h-64 w-full "
                     />
                   </div>
-                   <div className="relative">
+                  <div className="relative">
                     <button className="hover:cursor-pointer  absolute right-2 top-1 text-md font-bold mt-1 p-1 rounded ">
                       <GrFavorite
                         color="white"
