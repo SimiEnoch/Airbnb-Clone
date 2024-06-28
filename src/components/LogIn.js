@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import Select from 'react-select';
 import { CountriesData } from './CountriesData';
-import {FcGoogle} from 'react-icons/fc';
-import { DiApple } from "react-icons/di";
-import { CiMail } from "react-icons/ci";
+import { FcGoogle } from 'react-icons/fc';
+import { DiApple } from 'react-icons/di';
+import { CiMail } from 'react-icons/ci';
 import Facebook from '../images/facebook.png';
 
 function LogIn({ onClose }) {
@@ -39,7 +39,7 @@ function LogIn({ onClose }) {
               <button
                 className="flex items-start py-1 px-4 justify-start"
                 onClick={closeModal}
->
+              >
                 x
               </button>
               <div className="text-center">
@@ -89,65 +89,9 @@ function LogIn({ onClose }) {
             <div className=" font-[Calibri] text-center mt-2 bg-[#c73d54] text-white p-3 mx-8  rounded-lg">
               <button className=" w-full font-bold">Continue</button>
             </div>
-
-            <div className="flex items-center w-full py-4">
-              <div className="flex-grow border-t border-gray-300"></div>
-              <div className="px-4 text-gray-500 font-semibold">
-                or
-              </div>
-              <div className="flex-grow border-t border-gray-300"></div>
-            </div>
-
-<div className="flex flex-col text-black  gap-3  border-0 py-1 items-center justify-center">     
-                <span className="flex">
-               <div className="flex items-start relative left-7 top-4 jus">
-               
-               <FcGoogle />
-               </div>
-                <input
-          name="from_name"
-          type="text"
-          placeholder="Sign In with Gmail"
-          className=" border rounded pl-8 p-3 w-full border-black md:w-[480px]"
-        />
-                </span>
-                
-                <span className="flex">
-               <div className="flex w-5 h-5 items-start relative left-7 top-4 ">
-                <img src={Facebook} alt="facebook-icon" />
-               </div>
-                <input
-          name="from_name"
-          type="text"
-          placeholder="Sign In with Facebook"
-          className=" border rounded pl-8 p-3 w-full border-black md:w-[480px]"
-        />
-                </span>
-   
-       <span className="flex">
-               <div className="flex items-start relative left-7 top-4"><DiApple /></div>
-                <input
-          name="from_name"
-          type="text"
-          placeholder="Sign In with Apple"
-          className=" border rounded pl-8 p-3 w-full border-black md:w-[480px]"
-        />
-                </span>
-                <span className="flex">
-               <div className="flex items-start relative left-7 top-4 "><CiMail /></div>
-                <input
-          name="from_name"
-          type="text"
-          placeholder="Sign In with Email"
-          className=" border rounded pl-8 p-3 w-full border-black md:w-[480px] "
-        />
-                </span>
-       
-     </div>
           </form>
-     
         </div>
-        </div>
+      </div>
     </div>
 
     // <div className="flex justify-center mt-4 items-center">

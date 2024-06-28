@@ -21,7 +21,7 @@ function Header() {
   };
 
   return (
-    <header className="max-w-screen-xl fixed flex z-10 top-0 w-full shadow items-center justify-between bg-white h-[65px] md:px-16 px-8 text-black mb-0 pb-0 ">
+    <header className=" fixed flex z-10 top-0 w-full shadow items-center justify-between bg-white h-[65px] md:px-16 px-8 text-black mb-0 pb-0 ">
       <a href="#" class="flex px-1 sm:px-0">
         <img
           src={icon}
@@ -55,7 +55,7 @@ function Header() {
       <nav
         className={`absolute bg-white text-black ${
           hamburger ? 'top-[-1000%]' : 'top-[0px]'
-        } w-full left-0 z-[-1] p-8  md:left-auto md:w-auto shadow md:shadow-none md:top-0 md:relative md:bg-transparent md:p-0 md:z-[0] sm:hidden md:block`}
+        } w-full left-0 z-[-1] p-8  md:left-auto md:w-auto shadow md:shadow-none md:top-0 md:relative md:bg-transparent md:p-0 md:z-[0]  block`}
       >
         <div className="flex tracking-tighter gap-2 text-xl md:text-sm flex-col md:flex-row font-semibold md:order-2 sm:hidden md:flex">
           <div className="hidden md:block p-2 hover:text-slate-800  duration-500 text-[13px]">

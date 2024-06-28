@@ -44,7 +44,7 @@ function Apartment({ Data, tax }) {
                       className=" sm:h-64 rounded-lg md:h-64 w-full "
                     />
                   </div>
-                  <div className="relative">
+                   <div className="relative">
                     <button className="hover:cursor-pointer  absolute right-2 top-1 text-md font-bold mt-1 p-1 rounded ">
                       <GrFavorite
                         color="white"
